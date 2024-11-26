@@ -69,4 +69,4 @@ dangerous) process. Use this at your own risk.
 
 # Licence
 
-This software is [licensed][LICENSE] under the MIT licence.
+This software is [licensed](LICENSE) under the MIT licence.
