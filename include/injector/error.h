@@ -1,5 +1,9 @@
 #pragma once
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 enum injector_inject_result {
 	INJECT_RESULT_NO_SECTION = -8,
 	INJECT_RESULT_STEAM_APPID = -7,
@@ -15,3 +19,7 @@ enum injector_inject_result {
 int injector_error();
 const char* injector_strerror(int error);
 const char* injector_win32_fn();
+
+#ifdef __cplusplus
+}
+#endif
