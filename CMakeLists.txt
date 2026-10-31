@@ -9,7 +9,7 @@ add_library (injector STATIC src/injector.c src/loader.c src/error.c
   include/injector/private/error.h)
 add_compile_definitions (injector PUBLIC _CRT_SECURE_NO_WARNINGS)
 target_include_directories (injector PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
-target_link_libraries (injector ImageHlp)
+target_link_libraries (injector imagehlp)
 
 add_executable (test_injector src/tests/injector.c)
 target_include_directories (test_injector PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
